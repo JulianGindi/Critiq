@@ -37,6 +37,10 @@ class AppDelegate: NSObject, NSApplicationDelegate, APIHelperDelegate, NSUserNot
         let outputArray = [url]
         clipboard.clearContents()
         clipboard.writeObjects(outputArray)
+        
+        // Send out notification to change icon again
+        NSNotificationCenter.defaultCenter().postNotificationName("DID_UPLOAD", object: nil)
+        
         // Now display a notification
         displayNotification()
         
