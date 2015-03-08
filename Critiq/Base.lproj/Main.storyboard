@@ -646,5 +646,18 @@
             </objects>
             <point key="canvasLocation" x="75" y="0.0"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="lMW-gE-8Pr">
+            <objects>
+                <viewController id="CGg-nI-5k4" sceneMemberID="viewController">
+                    <view key="view" id="ROf-VC-SS3" customClass="SettingsViewController" customModule="Critiq" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="rRu-0l-Zil" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="263"/>
+        </scene>
     </scenes>
 </document>
