@@ -12,16 +12,13 @@ class StatusItemView: NSView {
     var image : NSImage?
     var statusItem: NSStatusItem? {
         didSet {
-            println("foo")
             self.setUp()
         }
     }
 
     override func drawRect(dirtyRect: NSRect) {
         super.drawRect(dirtyRect)
-
         self.image = NSImage(named: "StatusHighlighted")
-    
     }
     
     func setUp() {
