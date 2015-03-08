@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E56D9061-9DB7-474F-BCE4-A223805F02F7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Critiq</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>FE490FABF9C6617E253EC42EA88E6E05DA8990F2</key>
+		<string>github.com:JulianGindi/Critiq.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Critiq.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>FE490FABF9C6617E253EC42EA88E6E05DA8990F2</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:JulianGindi/Critiq.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>FE490FABF9C6617E253EC42EA88E6E05DA8990F2</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FE490FABF9C6617E253EC42EA88E6E05DA8990F2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Critiq</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -11,6 +11,7 @@
 		1F2B987F1AA68C810000C447 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F2B987E1AA68C810000C447 /* Images.xcassets */; };
 		1F2B98821AA68C810000C447 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F2B98801AA68C810000C447 /* Main.storyboard */; };
 		1F2B988E1AA68C810000C447 /* CritiqTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2B988D1AA68C810000C447 /* CritiqTests.swift */; };
+		5D1505E30F00B65D674D65C8 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CE56AE85B7CDD8C08EC7FA9 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +33,9 @@
 		1F2B98871AA68C810000C447 /* CritiqTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CritiqTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F2B988C1AA68C810000C447 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F2B988D1AA68C810000C447 /* CritiqTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CritiqTests.swift; sourceTree = "<group>"; };
+		4DD6EF6FF6C0C5F549C84B0A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		5CE56AE85B7CDD8C08EC7FA9 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C61D869ECCB2AE9EB79680C1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D1505E30F00B65D674D65C8 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +63,8 @@
 				1F2B98771AA68C810000C447 /* Critiq */,
 				1F2B988A1AA68C810000C447 /* CritiqTests */,
 				1F2B98761AA68C810000C447 /* Products */,
+				7DA113F7FF41166A43FDE7D6 /* Pods */,
+				E5CE197A7231CFB9BE2AED49 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +113,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		7DA113F7FF41166A43FDE7D6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4DD6EF6FF6C0C5F549C84B0A /* Pods.debug.xcconfig */,
+				C61D869ECCB2AE9EB79680C1 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E5CE197A7231CFB9BE2AED49 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5CE56AE85B7CDD8C08EC7FA9 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -113,9 +137,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F2B98911AA68C810000C447 /* Build configuration list for PBXNativeTarget "Critiq" */;
 			buildPhases = (
+				3A55B6D02E04F46A527CE154 /* Check Pods Manifest.lock */,
 				1F2B98711AA68C810000C447 /* Sources */,
 				1F2B98721AA68C810000C447 /* Frameworks */,
 				1F2B98731AA68C810000C447 /* Resources */,
+				D1D12C613066BA8B133DF711 /* Embed Pods Frameworks */,
+				B148454BC10DF7682698007F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,6 +226,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A55B6D02E04F46A527CE154 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B148454BC10DF7682698007F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1D12C613066BA8B133DF711 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1F2B98711AA68C810000C447 /* Sources */ = {
@@ -318,6 +393,7 @@
 		};
 		1F2B98921AA68C810000C447 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DD6EF6FF6C0C5F549C84B0A /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -329,6 +405,7 @@
 		};
 		1F2B98931AA68C810000C447 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C61D869ECCB2AE9EB79680C1 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -393,6 +470,7 @@
 				1F2B98931AA68C810000C447 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F2B98941AA68C810000C447 /* Build configuration list for PBXNativeTarget "CritiqTests" */ = {
 			isa = XCConfigurationList;
@@ -401,6 +479,7 @@
 				1F2B98961AA68C810000C447 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
