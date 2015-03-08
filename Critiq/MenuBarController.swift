@@ -14,6 +14,7 @@ class MenuBarController:NSObject {
     let statusBar = NSStatusBar.systemStatusBar()
     let statusBarItem : NSStatusItem?
     let statusItemView : StatusItemView?
+    let settingsView : SettingsViewController?
     
     override init() {
         statusBarItem = statusBar.statusItemWithLength(24.0)
@@ -21,5 +22,9 @@ class MenuBarController:NSObject {
         self.statusItemView?.statusItem = statusBarItem
         self.statusBarItem?.image = NSImage(named: "StatusHighlighted")
         self.statusBarItem?.action = "uploadClipboard"
+    }
+    
+    func displaySettings() {
+        
     }
 }
