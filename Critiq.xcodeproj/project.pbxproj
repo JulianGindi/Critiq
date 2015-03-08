@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F12B4391AACE364008789D3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F12B4381AACE364008789D3 /* SettingsViewController.swift */; };
 		1F2B987B1AA68C810000C447 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2B987A1AA68C810000C447 /* AppDelegate.swift */; };
 		1F2B987F1AA68C810000C447 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F2B987E1AA68C810000C447 /* Images.xcassets */; };
 		1F2B98821AA68C810000C447 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F2B98801AA68C810000C447 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F12B4381AACE364008789D3 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		1F2B98751AA68C810000C447 /* Critiq.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Critiq.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F2B98791AA68C810000C447 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F2B987A1AA68C810000C447 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				1F65F2C01AACBCEA003E6EC9 /* MenuBarController.swift */,
 				1F65F2C21AACC153003E6EC9 /* StatusItemView.swift */,
 				1F65F2C41AACC8AB003E6EC9 /* APIHelper.swift */,
+				1F12B4381AACE364008789D3 /* SettingsViewController.swift */,
 				1F2B987E1AA68C810000C447 /* Images.xcassets */,
 				1F2B98801AA68C810000C447 /* Main.storyboard */,
 				1F2B98781AA68C810000C447 /* Supporting Files */,
@@ -293,6 +296,7 @@
 				1F65F2C51AACC8AB003E6EC9 /* APIHelper.swift in Sources */,
 				1F65F2C31AACC153003E6EC9 /* StatusItemView.swift in Sources */,
 				1F65F2C11AACBCEA003E6EC9 /* MenuBarController.swift in Sources */,
+				1F12B4391AACE364008789D3 /* SettingsViewController.swift in Sources */,
 				1F2B987B1AA68C810000C447 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
