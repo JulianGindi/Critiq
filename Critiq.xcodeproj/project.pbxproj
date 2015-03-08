@@ -11,6 +11,8 @@
 		1F2B987F1AA68C810000C447 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F2B987E1AA68C810000C447 /* Images.xcassets */; };
 		1F2B98821AA68C810000C447 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F2B98801AA68C810000C447 /* Main.storyboard */; };
 		1F2B988E1AA68C810000C447 /* CritiqTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2B988D1AA68C810000C447 /* CritiqTests.swift */; };
+		1F65F2C11AACBCEA003E6EC9 /* MenuBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F65F2C01AACBCEA003E6EC9 /* MenuBarController.swift */; };
+		1F65F2C31AACC153003E6EC9 /* StatusItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F65F2C21AACC153003E6EC9 /* StatusItemView.swift */; };
 		5D1505E30F00B65D674D65C8 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CE56AE85B7CDD8C08EC7FA9 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -33,6 +35,8 @@
 		1F2B98871AA68C810000C447 /* CritiqTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CritiqTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F2B988C1AA68C810000C447 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F2B988D1AA68C810000C447 /* CritiqTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CritiqTests.swift; sourceTree = "<group>"; };
+		1F65F2C01AACBCEA003E6EC9 /* MenuBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuBarController.swift; sourceTree = "<group>"; };
+		1F65F2C21AACC153003E6EC9 /* StatusItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusItemView.swift; sourceTree = "<group>"; };
 		4DD6EF6FF6C0C5F549C84B0A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		5CE56AE85B7CDD8C08EC7FA9 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C61D869ECCB2AE9EB79680C1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -81,6 +85,8 @@
 			isa = PBXGroup;
 			children = (
 				1F2B987A1AA68C810000C447 /* AppDelegate.swift */,
+				1F65F2C01AACBCEA003E6EC9 /* MenuBarController.swift */,
+				1F65F2C21AACC153003E6EC9 /* StatusItemView.swift */,
 				1F2B987E1AA68C810000C447 /* Images.xcassets */,
 				1F2B98801AA68C810000C447 /* Main.storyboard */,
 				1F2B98781AA68C810000C447 /* Supporting Files */,
@@ -280,6 +286,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F65F2C31AACC153003E6EC9 /* StatusItemView.swift in Sources */,
+				1F65F2C11AACBCEA003E6EC9 /* MenuBarController.swift in Sources */,
 				1F2B987B1AA68C810000C447 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

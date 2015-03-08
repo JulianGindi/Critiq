@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Critiq
 //
-//  Created by _ on 3/3/15.
+//  Created by Julian Gindi on 3/3/15.
 //  Copyright (c) 2015 JulianGindi. All rights reserved.
 //
 
@@ -10,11 +10,12 @@ import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
+    var menuBarController : MenuBarController?
 
 
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
-        // Insert code here to initialize your application
+        menuBarController = MenuBarController.init()
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
