@@ -2,8 +2,8 @@
 //  MenubarController.swift
 //  Critiq
 //
-//  Created by Julian Gindi on 3/8/15.
-//  Copyright (c) 2015 JulianGindi. All rights reserved.
+//  Created by Thomas Degry and Julian Gindi on 3/8/15.
+//  Copyright (c) 2015 Thomas Degry and Julian Gindi. All rights reserved.
 //
 
 import AppKit

@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  Critiq
 //
-//  Created by Julian Gindi on 3/3/15.
-//  Copyright (c) 2015 JulianGindi. All rights reserved.
+//  Created by Thomas Degry and Julian Gindi on 3/3/15.
+//  Copyright (c) 2015 Thomas Degry and Julian Gindi. All rights reserved.
 //
 
 import Cocoa
@@ -32,7 +32,6 @@ class AppDelegate: NSObject, NSApplicationDelegate, APIHelperDelegate, NSUserNot
     
     func didReceiveUrl(url: String) {
         // We will copy url to clipboard
-        println(url)
         let clipboard = NSPasteboard.generalPasteboard()
         let outputArray = [url]
         clipboard.clearContents()
@@ -59,11 +58,10 @@ class AppDelegate: NSObject, NSApplicationDelegate, APIHelperDelegate, NSUserNot
         let notification = NSUserNotification()
         
         notification.title = "Critiq Upload"
-        notification.informativeText = "Your code has been uploaded"
+        notification.informativeText = "The URL of your upload has been copied to your clipboard"
         notification.hasActionButton = true
         var center:NSUserNotificationCenter = NSUserNotificationCenter.defaultUserNotificationCenter()
         
-        //center.delegate = self
         center.delegate = self
         center.scheduleNotification(notification)
     }
