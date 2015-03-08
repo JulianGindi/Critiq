@@ -17,5 +17,9 @@ class MenuBarController:NSObject {
     
     override init() {
         statusBarItem = statusBar.statusItemWithLength(24.0)
+        self.statusItemView = StatusItemView()
+        self.statusItemView?.statusItem = statusBarItem
+        self.statusBarItem?.image = NSImage(named: "StatusHighlighted")
+        self.statusBarItem?.action = "uploadClipboard"
     }
 }

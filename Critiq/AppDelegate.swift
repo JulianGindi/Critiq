@@ -13,13 +13,16 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var menuBarController : MenuBarController?
 
 
-
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         menuBarController = MenuBarController.init()
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
         // Insert code here to tear down your application
+    }
+    
+    func uploadClipboard() {
+        println("uploading clipboard")
     }
 
 
