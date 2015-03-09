@@ -11,3 +11,5 @@ A simple menu bar icon that uploads the contents of your clipboard to [dpaste](h
 1. More information on how to install
 2. Settings (Select default language and duration of snippet)
 3. Auto-detection of language
+4. Support for additional services
+5. Hotkeys
