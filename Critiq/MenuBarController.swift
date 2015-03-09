@@ -14,7 +14,6 @@ class MenuBarController:NSObject {
     let statusBar = NSStatusBar.systemStatusBar()
     let statusBarItem : NSStatusItem?
     let statusItemView : StatusItemView?
-    let settingsView : SettingsViewController?
     
     override init() {
         statusBarItem = statusBar.statusItemWithLength(24.0)

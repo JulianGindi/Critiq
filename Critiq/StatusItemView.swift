@@ -20,6 +20,7 @@ class StatusItemView: NSView {
             self.display()
         }
     }
+
     var isUploading:Bool = false
     var target:AnyObject?
     var action:Selector?
@@ -33,6 +34,8 @@ class StatusItemView: NSView {
             self.setUp()
         }
     }
+    
+    var settingsWindow = SettingsWindowController()
 
     override func drawRect(dirtyRect: NSRect) {
         super.drawRect(dirtyRect)
@@ -73,7 +76,7 @@ class StatusItemView: NSView {
     
     func setUp() {
         self.statusItem?.view = self
-        
+
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "didFinishUploading:", name: "DID_UPLOAD", object: nil)
     }
     
@@ -82,8 +85,15 @@ class StatusItemView: NSView {
     }
     
     override func mouseDown(theEvent: NSEvent) {
-        self.iconState = iconStates.iconStateUploading
-        NSApp.sendAction(self.action!, to: self.target, from: self)
-        self.isHighlighted = true
+        // First check to see if the right mouse button was used
+        let clickMask = Int(theEvent.modifierFlags.rawValue) & Int(NSEventModifierFlags.ControlKeyMask.rawValue)
+        if clickMask != 0 {
+            println("Clicked with Control")
+            settingsWindow.view!.orderFront(self)
+        } else {
+            self.iconState = iconStates.iconStateUploading
+            NSApp.sendAction(self.action!, to: self.target, from: self)
+            self.isHighlighted = true
+        }
     }
 }
