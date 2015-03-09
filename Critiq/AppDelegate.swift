@@ -58,7 +58,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, APIHelperDelegate, NSUserNot
         let notification = NSUserNotification()
         
         notification.title = "Critiq Upload"
-        notification.informativeText = "The URL of your upload has been copied to your clipboard"
+        notification.informativeText = "The URL of your snippet has been copied to your clipboard"
         notification.hasActionButton = true
         var center:NSUserNotificationCenter = NSUserNotificationCenter.defaultUserNotificationCenter()
         

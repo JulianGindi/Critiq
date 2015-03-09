@@ -3,7 +3,7 @@
 //  Critiq
 //
 //  Created by Thomas Degry and Julian Gindi on 3/8/15.
-//  Copyright (c) 2015 Thomas Degry Julian Gindi. All rights reserved.
+//  Copyright (c) 2015 Thomas Degry and Julian Gindi. All rights reserved.
 //
 
 import Cocoa

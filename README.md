@@ -6,6 +6,10 @@ A simple menu bar icon that uploads the contents of your clipboard to [dpaste](h
 
 1. Click the icon to upload the contents of your clipboard. You will be notified when your code has been uploaded and the "dpaste url" will be copied to your clipboard.
 
+## Download
+
+You can always grab the most recent build [here](https://github.com/JulianGindi/Critiq/releases)
+
 ## TODO
 
 1. More information on how to install
