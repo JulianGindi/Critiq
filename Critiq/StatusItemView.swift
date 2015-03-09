@@ -35,7 +35,7 @@ class StatusItemView: NSView {
         }
     }
     
-    var settingsWindowController : SettingsWindowController = SettingsWindowController()
+    var settingsWindowController  = SettingsWindowController(windowNibName: "SettingsWindow")
 
     override func drawRect(dirtyRect: NSRect) {
         super.drawRect(dirtyRect)
@@ -89,7 +89,7 @@ class StatusItemView: NSView {
         let clickMask = Int(theEvent.modifierFlags.rawValue) & Int(NSEventModifierFlags.ControlKeyMask.rawValue)
         if clickMask != 0 {
             println("Clicked with Control")
-            settingsWindowController.showWindow(self)
+            settingsWindowController.showWindow(nil)
         } else {
             self.iconState = iconStates.iconStateUploading
             NSApp.sendAction(self.action!, to: self.target, from: self)
