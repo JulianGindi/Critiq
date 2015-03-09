@@ -16,7 +16,7 @@
 		1F65F2C51AACC8AB003E6EC9 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F65F2C41AACC8AB003E6EC9 /* APIHelper.swift */; };
 		1F7307FE1AAE0992007F276F /* SettingsWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F7307FD1AAE0992007F276F /* SettingsWindow.xib */; };
 		1F7308001AAE0AAD007F276F /* SettingsWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7307FF1AAE0AAD007F276F /* SettingsWindowView.swift */; };
-		1F7308021AAE0D19007F276F /* SettingsWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7308011AAE0D19007F276F /* SettingsWindowController.swift */; };
+		1FF28C0A1AAE147300258C80 /* SettingsWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF28C091AAE147300258C80 /* SettingsWindowController.swift */; };
 		5D1505E30F00B65D674D65C8 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CE56AE85B7CDD8C08EC7FA9 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -44,7 +44,7 @@
 		1F65F2C41AACC8AB003E6EC9 /* APIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
 		1F7307FD1AAE0992007F276F /* SettingsWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsWindow.xib; sourceTree = "<group>"; };
 		1F7307FF1AAE0AAD007F276F /* SettingsWindowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsWindowView.swift; sourceTree = "<group>"; };
-		1F7308011AAE0D19007F276F /* SettingsWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsWindowController.swift; path = ../SettingsWindowController.swift; sourceTree = "<group>"; };
+		1FF28C091AAE147300258C80 /* SettingsWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsWindowController.swift; sourceTree = "<group>"; };
 		4DD6EF6FF6C0C5F549C84B0A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		5CE56AE85B7CDD8C08EC7FA9 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C61D869ECCB2AE9EB79680C1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -97,7 +97,7 @@
 				1F65F2C21AACC153003E6EC9 /* StatusItemView.swift */,
 				1F65F2C41AACC8AB003E6EC9 /* APIHelper.swift */,
 				1F7307FF1AAE0AAD007F276F /* SettingsWindowView.swift */,
-				1F7308011AAE0D19007F276F /* SettingsWindowController.swift */,
+				1FF28C091AAE147300258C80 /* SettingsWindowController.swift */,
 				1F2B98801AA68C810000C447 /* Main.storyboard */,
 				1F7307FD1AAE0992007F276F /* SettingsWindow.xib */,
 				1F2B987E1AA68C810000C447 /* Images.xcassets */,
@@ -304,7 +304,7 @@
 				1F65F2C31AACC153003E6EC9 /* StatusItemView.swift in Sources */,
 				1F65F2C11AACBCEA003E6EC9 /* MenuBarController.swift in Sources */,
 				1F2B987B1AA68C810000C447 /* AppDelegate.swift in Sources */,
-				1F7308021AAE0D19007F276F /* SettingsWindowController.swift in Sources */,
+				1FF28C0A1AAE147300258C80 /* SettingsWindowController.swift in Sources */,
 				1F7308001AAE0AAD007F276F /* SettingsWindowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

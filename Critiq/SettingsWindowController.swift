@@ -14,13 +14,14 @@ class SettingsWindowController: NSWindowController {
     override func windowDidLoad() {
         super.windowDidLoad()
         // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
+        self.showWindow(self)
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
-    override init(window: NSWindow) {
+    override init() {
         super.init(window: settingsWindow)
     }
 }
